@@ -1,0 +1,38 @@
+footer{
+    .container2{
+       @extend %flex-spbetween;
+        background-color: $clr-princ;
+        margin-top: 50px;
+        padding: 0 10px;
+
+        a{
+            text-decoration: none;
+            color: $clr-second;
+            font-size: 1.5rem;
+            @media screen and (max-width:750px) {
+                font-size: 1rem;
+            }
+        }
+        h3{
+            color: $clr-second;
+            font-size: 1.5rem;
+            @media screen and (max-width:750px) {
+                font-size: 1rem;
+            }
+        }
+        p{
+            color: rgb(193, 188, 188);
+        }
+        #links-index-footer{
+            a{
+                display: block;
+                font-size: 1rem;
+                margin-top: 10px;
+                @media screen and (max-width:750px) {
+                    font-size: 0.5rem;
+                }
+            }
+        }
+        
+    }
+}

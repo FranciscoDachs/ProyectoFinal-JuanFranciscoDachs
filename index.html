@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="shortcut icon" href="./img/favicon.jpg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <meta name="description" content="Somos una empresa de diseño industrial en Rosario, Argentina, fundada por dos hermanos apasionados por la creación y la innovación. Con una sólida formación como diseñadores industriales, ofrecemos soluciones creativas y funcionales en prototipado, renderizado, modelado 3D, gestión de fabricación, desarrollo y planimetría. Nuestro enfoque se basa en combinar estética y funcionalidad para crear productos que mejoren la vida de las personas. Contáctanos para transformar tus ideas en realidad.">
+    <meta name="keywords" content="Diseño industrial,Empresa de diseño industrial,Diseñadores industriales,Rosario,Argentina,Prototipado,Renderizado,Modelado 3D,Gestión de fabricación,Desarrollo de productos,Planimetría,Creatividad y funcionalidad,Soluciones de diseño,Estética y funcionalidad,Mejora de productos,Transformación de ideas en realidad,Innovación en diseño industrial,Diseño de productos,Visualización de diseños,Coordinación de producción,Documentación técnica">
+    <title>Inicio</title>
+</head>
+<body>
+    <nav>
+            <img src="./img/logo.jpg" alt="logo" class="logo">
+            <ul id="ul-desktop">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="./pages/Nosotros.html">Nosotros</a></li>
+                <li><a href="./pages/Servicios.html">Servicios</a></li>
+                <li><a href="./pages/Portfolio.html">Portfolio</a></li>
+                <li><a href="./pages/Contacto.html">Contacto</a></li>
+            </ul>
+            
+            <!--Dropdown menu-->
+            
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Inicio
+                </button>
+                <ul class="dropdown-menu">
+                <li><a href="./pages/Nosotros.html" class="dropdown-item" type="button">Nosotros</a></li>
+                  <li><a href="./pages/Servicios.html" class="dropdown-item" type="button">Servicios</a></li>
+                  <li><a href="./pages/Portfolio.html" class="dropdown-item" type="button">Portfolio</a></li>
+                  <li><a href="./pages/Contacto.html" class="dropdown-item" type="button">Contacto</a></li>
+                </ul>
+              </div>
+    </nav>
+ 
+    <main>
+        <section id="presentacion">
+            <article class="acomodar-inicio">
+                <h2>Convertimos sus ideas en proyectos</h2>
+                <p>Descubre nuestro enfoque creativo en el diseño industrial, donde combinamos estética y funcionalidad para crear productos que superan tus expectativas.</p>
+            </article>
+           
+            <img src="./img/dron.png" alt="dron">
+
+
+        </section>
+        <!--Cards-->
+        <section class="container">
+            <!--Card1-->
+            <article class="cards">
+                <figure class="images">
+                    <img src="./img/auris1.jpg" alt="auriculares-productos">
+                </figure>
+                
+                <div class="contenido">
+                    <h3>Productos</h3>
+                    <p>Descubre nuestra destacada sección de productos, donde presentamos soluciones de diseño industrial de alta calidad que satisfacen las demandas más exigentes del mercado.</p>
+                    <a href="./pages/Portfolio.html" class="button">Leer Mas</a>
+                </div>
+            </article>
+            
+            <!--Card2-->
+            
+            <article class="cards">
+                <figure class="images">
+                    <img src="./img/busa-trabajando1.jpg" alt="nosotros">
+                </figure>
+                <div class="contenido">
+                    <h3>Nosotros</h3>
+                    <p>Detrás de nuestra empresa de diseño industrial, encontrarás a dos hermanos apasionados y comprometidos, cuyo enfoque es brindar soluciones excepcionales y personalizadas.</p>
+                    <a href="./pages/Nosotros.html" class="button">Leer Mas</a>
+                </div>
+            </article>
+
+             <!--Card3-->
+
+            <article class="cards">
+                <figure class="images">
+                    <img src="./img/tanque1.jpg" alt="tanque de vino-servicios">
+                </figure>
+                <div class="contenido">
+                    <h3>Servicios</h3>
+                    <p>Descubre nuestra gama de servicios especializados en diseño industrial, donde ofrecemos prototipado, renderizado, modelado 3D y mucho más para llevar tus ideas a la realidad</p>
+                    <a href="./pages/Servicios.html" class="button">Leer Mas</a>
+                </div>
+            </article>
+
+        </section>
+        
+        <div id="trabajos-rec-titulo">
+            <h2>Trabajos Recientes</h2>
+        </div>
+        <!--Galeria de img-->
+        
+        <section id="galeria-de-img">
+            <img src="./img/maquina1.jpg" alt="">
+            <img src="./img/maquina2.jpg" alt="">
+            <img src="./img/otramquina2.png" alt="">
+            <img src="./img/maquina4.jpg" alt="">
+            <img src="./img/plegadora.jpg" alt="">
+        </section>
+       
+
+        <!--Galeria de img en responsive-->
+
+        <div id="Carrusel-responsive-index">
+            <div id="carouselExampleDark" class="carousel carousel-dark slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="./img/maquina1.jpg" class="d-block w-100" alt="Cortadora de bolsas de arena industrial">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Primer imagen</h5>
+                      <p>Cortadora de bolsas de arena industrial.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img src="./img/otramaquina.png" class="d-block w-100" alt="Embolsadora industrial">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Segunda imagen</h5>
+                      <p>Embolsadora industrial</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/plegadora.jpg" class="d-block w-100" alt="Plegadora de bolsas industriales">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Tercer imagen</h5>
+                      <p>Plegadora de bolsas industriales.</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Siguiente</span>
+                </button>
+              </div>
+        </div>
+        <div id="centrar-boton"><a href="./pages/Portfolio.html" class="button">Ir a portfolio completo</a></div>
+        
+      
+    </main>
+    <footer>
+        <div class="container2">
+            <div>
+                <h3>B|M|S</h3>
+                <p>Rosario,Sta Fe</p>
+                <p>© 2023</p>
+            </div>
+            <div>
+                <a href="index.html" class="cambiar-boton">Inicio</a>
+            </div>
+            <div id="links-index-footer">
+                <h3>Contacto</h3>
+                <a href="https://www.instagram.com/busalacchi.di/">Instagram</a>
+                <a href="">Linkedin</a>
+                <a href="">Facebook</a>
+            </div>
+            <div>
+                <h3>FAQs</h3>
+            </div>
+            
+        </div>
+    </footer>
+ 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>

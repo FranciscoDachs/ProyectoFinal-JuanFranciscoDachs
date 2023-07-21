@@ -1,0 +1,133 @@
+nav{
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    height: 100px;
+    @extend %flex-spbetween;
+    flex-wrap:map-get($dsplay-1, nwrp);
+    align-items:map-get($dsplay-1,al-itms-ctr);
+    
+    background: #4B79A1; 
+    background: -webkit-linear-gradient(to left, #283E51, #4B79A1); 
+    background: linear-gradient(to left, #283E51, #4B79A1); 
+    font-family: $font-fmly;
+   
+    .logo{
+        mix-blend-mode:color-burn;
+        height: 100%;
+        width: 200px;}
+    
+    #ul-desktop{
+        width: 800px;
+        display:map-get($dsplay-1,dflex);
+        justify-content:map-get($dsplay-1,just-cont-around);
+        align-items:map-get($dsplay-1,al-itms-ctr);
+        padding: 10px 0;            
+        list-style-type: none;
+        flex-wrap: map-get($dsplay-1, wrp);
+
+            li{
+                position: relative;
+                cursor: pointer;
+                 list-style: none;
+        
+                 &::before,
+                 &::after{
+                     content: "";
+                     position: absolute;
+                     width: 0;
+                     height: 3px;
+                     background-image:linear-gradient(90deg,rgb(248, 238, 238),rgb(241, 236, 236));
+                     transition: 500ms ease;
+                 }
+                 
+                 &::before{
+                     top: -10px;
+                     left: 0;
+                 
+                     box-shadow: 2px 2px 5px rgb(241, 242, 244);
+                 }
+                 
+                 &::after{
+                     bottom: -10px;
+                     right: 0;
+                 
+                     box-shadow: 2px -2px 5px rgb(247, 242, 242);
+                 }
+                 
+                 &:hover::before,
+                 &:hover::after{
+                     width: 100%;
+                 }
+                a{
+                    font-size: 1.5rem;
+                    color: white;
+                    text-decoration: none;
+                }
+        
+            }
+        }
+    
+    .dropdown{
+    display:$dply-none;
+
+    ul{
+        width: 800px;
+        justify-content:map-get($dsplay-1,just-cont-around);
+        align-items:map-get($dsplay-1,al-itms-ctr);
+        padding: 10px 0;            
+        list-style-type: none;
+        flex-wrap: map-get($dsplay-1, wrp);
+
+            li{
+                position: relative;
+                cursor: pointer;
+                list-style: none;
+                a{
+                    font-size: 1.5rem;
+                    color: white;
+                    text-decoration: none;
+                }
+        
+            }
+        }
+    }
+}
+
+@media screen and (max-width:750px){
+    nav {
+        #ul-desktop{
+        display: none;}
+
+        .dropdown{
+            display: block;
+            margin-top: 40px;
+    
+            .dropdown-menu{
+                background: #4B79A1; 
+                background: -webkit-linear-gradient(to left, #283E51, #4B79A1); 
+                background: linear-gradient(to left, #283E51, #4B79A1);
+                height: fit-content;
+
+            li{
+                position: relative;
+                cursor: pointer;
+                list-style: none;
+
+                li::before,
+                li::after{
+                    display: none;
+                }
+
+
+                a{
+                    font-size: 1.5rem;
+                    color: $clr-second;
+                    text-decoration: none;
+                }
+        
+            }
+        }
+    }
+}
+}

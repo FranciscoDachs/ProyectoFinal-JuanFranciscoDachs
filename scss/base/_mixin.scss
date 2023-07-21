@@ -1,0 +1,6 @@
+@mixin display-grid($dplay,$grid-temp-columns,$grid-temp-rows,$grid-temp-areas){
+
+display: $dplay;
+grid-template-columns: $grid-temp-columns;
+grid-template-rows: $grid-temp-rows;
+grid-template-areas: $grid-temp-areas;}

@@ -1,0 +1,15 @@
+.button{
+    text-decoration: map-get($dsplay-1, txt-decoration-non);
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color: $clr-princ;
+    border: 1px solid $clr-princ;
+    border-radius: 4px;
+    transition: all 400ms ease;
+
+    &:hover{
+        background:$clr-princ;
+        color:$clr-second;
+            }
+        }

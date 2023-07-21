@@ -1,0 +1,53 @@
+#body-nosotros{ 
+    font-family: $font-fmly;
+    
+    #h3-nosotros{
+        margin-top: 50px
+    }
+    h3{
+        @extend %flex-center;
+    }
+
+        #grilla-nosotros{
+            @include display-grid(grid, 50% 50%, 1fr 1fr, "carta-1 carta-2"
+            "carta-3 carta-4");
+            row-gap:50px;
+            
+            @media screen and (max-width:750px){
+                    display:block;
+                    margin: 0 auto;
+                }
+
+        .card{
+            margin: 45px auto;
+            box-shadow: 0px 1px 10px rgba(0,0,0,0.5);
+
+
+            #card-1{
+                grid-area: carta-1;
+            }
+            #card-2{
+                grid-area: carta-2;
+            }
+            #card-3{
+                grid-area: carta-3;
+            }
+            #card-4{
+                grid-area: carta-4;
+                padding-left: 50px;
+            }
+
+            .card-body{
+
+                background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+                    
+                    p{
+                        color:$clr-second;
+                        font-size: 17px;
+                    }
+                }
+        }
+
+
+    }
+}
